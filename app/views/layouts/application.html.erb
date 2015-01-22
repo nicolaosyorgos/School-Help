@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Online Notebook</title>
-    <%= stylesheet_link_tag    'http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true  %>
     <%= favicon_link_tag "/images/favico.ico" %>
     <%= csrf_meta_tags  %>
@@ -12,6 +11,6 @@
     <%= render 'layouts/nav' %>
     <%= yield  %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
-     <%= javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js', 'data-turbolinks-track' => true  %>
+    <%= javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js', 'data-turbolinks-track' => true  %>
   </body>
 </html>

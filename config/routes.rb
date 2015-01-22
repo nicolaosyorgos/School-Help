@@ -10,4 +10,5 @@ end
     
   root 'welcome#index'
   get '/subjects' => 'subjects#subjects'
+  get '/posts' => 'posts#index'
 end

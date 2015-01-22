@@ -1,15 +1,14 @@
-<div class="center">
-<h2>Log in</h2>
-
+<div class="container-custom">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<fieldset>
  <div class="form-wrapper-new-user">
   <div class="field form-group">
-    <%= f.email_field :email, autofocus: true %>
     <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, :id => "email" %>
   </div>
   <div class="field input-group">
-    <%= f.password_field :password, autocomplete: "off" %>
-    <%= f.label :password %>
+    <%= f.label :password, :for => "password" %>
+    <%= f.password_field :password, autocomplete: "off", :id => "password" %>
   </div>
 
 
@@ -30,9 +29,5 @@
     </div>
   <% end -%>
 <% end %>
-
-<!--<div class="devise-links">
-  <a class="forgot-pass" href="/users/password/new">Forgot your password?</a>
-</div>
--->
+</fieldset>
 </div>
