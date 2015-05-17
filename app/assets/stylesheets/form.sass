@@ -1,0 +1,61 @@
+.all-form,
+.edit-note,
+.new_user,
+.new_note,
+.simple_form
+  input
+    background: none
+    border: solid 2px #87d37c
+    color: #87d37c
+    padding: 10px 10px
+    font-size: 18px
+    display: inline-block
+
+    &:focus,
+    &:active
+      outline: none
+
+    &[type="text"],
+    &[type="email"],
+    &[type="password"]
+      border: none
+      border-bottom: solid 2px #87d37c
+    &[type="submit"]
+      &:active
+        color: white
+        background: #87d37c
+
+
+
+  .input-group,
+  .note-title,
+  .note-content
+    display: inline-block
+    margin-right: 20px
+    position: relative
+
+    label
+      +transform(translateY(-50%))
+      +position(absolute, 50% null null 5px)
+      font:
+        family: Open Sans
+        style: italic
+        size: 18px
+      color: #666
+      pointer-events: none
+      +transition
+
+  input:focus + label,
+  input.has-value + label
+    top: -10px
+    font-size: 14px
+    color: #aaa
+    
+.rem-me
+  float: left
+  
+//.devise-links
+  float: right
+  
+  //a:last-child
+    margin-left: 30px

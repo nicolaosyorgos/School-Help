@@ -1,10 +1,7 @@
 /*
  *= require_self
  */
-
-
-@import 'global.css.sass';
-@import 'normalize.css';
-@import 'notes.css.sass';
-@import 'welcome.css.sass'
-    
+@import 'bootstrap.css';
+@import 'form.sass';
+@import 'notes.sass';
+@import 'font-awesome';

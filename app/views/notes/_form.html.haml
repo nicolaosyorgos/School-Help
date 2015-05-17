@@ -1,4 +1,4 @@
 = simple_form_for @note do |f|
-    = f.input :title
-    = f.input :content
-    = f.button :submit
+  = f.input :title, :placeholder => "Title"
+  = f.input :content, :placeholder => "All content goes here!"
+  = f.button :submit, class: "button"

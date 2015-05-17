@@ -1,0 +1,36 @@
+PATHS!
+
+        %li
+          - if user_signed_in?
+            %a{:href => "#"} Subjects
+          - else
+            %a{:href => "#"} About
+        %li
+          - if user_signed_in?
+            %a{:href => "#"} My account
+          - else
+            %a{:href => "#"} Pricing
+          
+      %ul.inline-list.hide-for-small-only.account-action
+        %li
+          - if user_signed_in?
+            %a{"data-reveal-id" => "myModal", :href => "/notes/new"} New note
+          - else
+            %a{"data-method" => "get", "data-reveal-id" => "myModal", :href => "/users/sign_in"} Log in
+    
+        %li
+          - if user_signed_in?
+            %a.signup{"data-method" => "delete", :href => "/users/sign_out", :rel => "nofollow"} Sign out
+          - else
+            %a.signup{"data-reveal-id" => "myModal", :href => "/users/sign_up"} Sign up
+          
+          %a.account.hide-for-medium-up{"data-reveal-id" => "myModal", :href => "#"}
+          
+  
+  
+  
+  <% if user_signed_in? %>
+    <a class="signup" data-method="delete" href="/users/sign_out" rel="nofollow">Sign out</a>
+  <% else %>
+    <a class="signup" data-reveal-id="myModal" href="/users/sign_up">Sign up</a>
+  <% end %>
