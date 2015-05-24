@@ -1,6 +1,4 @@
-// Place all the styles related to the Notes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'bourbon/bourbon'
 
 .grey
   color: #666
@@ -29,14 +27,6 @@
 .c-t
   text-align: center
   
-.note-wrapper
-  max-width: 200px
-  background-color: #666
-  border-radius: 10px
-  padding: 20px 15px 20px 15px
-  margin-bottom: 20px
-  margin-right: 20px
-  
 a:hover
   text-decoration: none
 
@@ -64,3 +54,35 @@ a:hover
   
 .n-c::first-letter
   text-transform: uppercase
+  
+  
+button a
+  color: #fff
+  
+.note
+  //width: 25%
+  float: left
+  list-style-type: none
+  
+  
+.note-content
+  margin-bottom: 10px
+  padding: 10px
+  margin-bottom: 20px
+  border: 1px solid #eee
+  border-left-width: 5px
+  border-radius: 3px
+  border-left-color: #ce4844
+  
+a
+  color: #777
+  
+  &:hover
+    color: #666
+    +transition
+  
+  
+.no-label
+  label
+    display: none
+
