@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Online Notebook</title>
+    <%= stylesheet_link_tag    'http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true  %>
+    <%= favicon_link_tag "/images/favico.ico" %>
+    <%= csrf_meta_tags  %>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  </head>
+  <body>
+    <%= render 'layouts/nav' %>
+    <%= yield  %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+  </body>
+</html>
