@@ -5,10 +5,12 @@
 
   <div class="form-inputs all-form">
     <div class="input-group">
+    <%= f.text_field :first_name %>
+    </div>
+    <div class="input-group">
     <%= f.input :email, required: true, autofocus: true %>
     </div>
      <div class="input-group">
-     <label for="">Password</label>
     <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable) %>
     </div>
     <div class="input-group">

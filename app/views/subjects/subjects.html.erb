@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Untitled Project - Subjects</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<% if signed_in? %>
+  <!-- CONTENT GO HERE, MAN! -->
+	<section class="subject-section container-custom">
+		<h1>Subjects</h1>
+
+		<div class="row" style="margin-left: 0px; margin-right: 0px; margin: 0 auto;">
+
+  			<div class="col-md-3">
+  				<div class="math-topic topic">
+  					<div class="topic-icon">
+              <%= image_tag("pi.svg", :height => '60px', :width => '60px') %>
+  					</div>
+  					<a class="topic-button">Matematik</a>
+  				</div>
+  			</div>
+
+  			<div class="col-md-3">
+  				<div class="science-topic topic">
+  					<div class="topic-icon">
+              <%= image_tag("science.svg", :height => '60px', :width => '60px') %>
+  					</div>
+  					<a class="topic-button">Kemi</a>
+  				</div>
+  			</div>
+
+  			<div class="col-md-3">
+  				<div class="fysik-topic topic">
+  					<div class="topic-icon">
+  						<%= image_tag("fysik.svg", :height => '60px', :width => '60px') %>
+  					</div>
+  					<a class="topic-button">Fysik</a>
+  				</div>
+  			</div>
+
+  			<div class="col-md-3">
+  				<div class="dansk-topic topic">
+  					<div class="topic-icon">
+  						<%= image_tag("grammar.svg", :height => '60px', :width => '60px') %>
+  					</div>
+  					<a class="topic-button">Dansk</a>
+  				</div>
+  			</div>
+
+
+  			<div class="col-md-3">
+  				<div class="english-topic topic">
+  					<div class="topic-icon">
+              <%= image_tag("english.svg", :height => '60px', :width => '60px') %>
+  					</div>
+  					<a class="topic-button">Engelsk</a>
+  				</div>
+  			</div>
+
+  			<div class="col-md-3">
+  				<div class="historie-topic topic">
+  					<div class="topic-icon">
+  						<%= image_tag("history.svg", :height => '60px', :width => '60px') %>
+  					</div>
+  					<a class="topic-button">Historie</a>
+  				</div>
+  			</div>
+
+  			<div class="col-md-3">
+  				<div class="biologi-topic topic">
+  					<div class="topic-icon">
+  						<%= image_tag("biologi.svg", :height => '60px', :width => '60px') %>
+  					</div>
+  					<a class="topic-button">Biologi</a>
+  				</div>
+  			</div>
+
+  			<div class="col-md-3">
+  				<div class="teknologi-topic topic">
+  					<div class="topic-icon">
+  						<%= image_tag("teknologi.svg", :height => '60px', :width => '60px') %>
+  					</div>
+  					<a class="topic-button">Teknologi</a>
+  				</div>
+  			</div>
+
+		</div>
+
+
+	</section>
+
+  <%else%>
+  <H2>Sut pik?</H2>
+  <%end%>
+
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>

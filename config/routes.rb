@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  mount Rich::Engine => '/rich', :as => 'rich'
   devise_for :users
   get 'welcome/index'
   resources :notes
@@ -10,5 +9,5 @@ end
     
     
   root 'welcome#index'
-    
+  get '/subjects' => 'subjects#subjects'
 end
