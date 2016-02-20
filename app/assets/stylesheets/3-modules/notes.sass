@@ -1,0 +1,108 @@
+@import 'bourbon/bourbon'
+
+.grey
+  color: #666
+  font-weight: 300
+  text-transform: uppercase
+  font-size: 32px
+  margin-bottom: -15px
+
+
+.new-note
+  margin: 0 auto
+  padding-top: 40px
+
+  hr
+    margin-bottom: 15px
+
+
+.name
+  &:hover,
+  &:focus,
+  &:active
+    color: #fff
+    text-decoration: none
+    border-bottom: 0px solid #87d37c
+
+.c-t
+  text-align: center
+
+a:hover
+  text-decoration: none
+
+
+.white
+  color: #fff
+
+
+#not-wrapper
+  margin: 0px
+
+
+.os
+  font-family: Open Sans
+
+.bold
+  font-weight: 600
+
+.uc
+  text-transform: uppercase
+
+
+.m-b-20
+  margin-bottom: 20px
+
+.n-c::first-letter
+  text-transform: uppercase
+
+
+button a
+  color: #fff
+
+.note
+  //width: 25%
+  float: left
+  list-style-type: none
+
+
+li .note-w .note-content
+  margin-bottom: 10px
+  padding: 10px
+  margin-bottom: 20px
+  border-radius: 3px
+  padding: 7.5px 15px
+  height: 150px
+  background-color: #2c3e50
+
+li:nth-child(2n) .note-w .note-content
+  background-color: #27ae60
+
+li:nth-child(3n) .note-w .note-content
+  background-color: #2980b9
+
+li:nth-child(4n) .note-w .note-content
+  background-color: #c0392b
+
+
+.note-content a
+  color: #777
+
+  &:hover
+    color: #666
+    +transition
+
+
+.note_title, .note_content
+  label
+    display: none
+
+.note_title
+  margin-bottom: 20px
+  max-width: 120px
+  overflow: hidden
+  text-overflow: ellipsis
+
+textarea
+  width: 80%
+  min-height: 200px
+  margin: 0 auto

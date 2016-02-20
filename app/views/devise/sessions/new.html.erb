@@ -1,11 +1,14 @@
 <div class="container-custom">
+
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
 <fieldset>
  <div class="form-wrapper-new-user">
   <div class="field form-group">
     <%= f.label :email %>
     <%= f.email_field :email, autofocus: true, :id => "email" %>
   </div>
+
   <div class="field input-group">
     <%= f.label :password, :for => "password" %>
     <%= f.password_field :password, autocomplete: "off", :id => "password" %>
@@ -17,7 +20,6 @@
   </div>
   <div class="namy">
   <a class="namy-child" href="/users/sign_up">Not a member yet&#63;</a><br/>
-  <hr>
   <a class="forgot-pass" href="/users/password/new">Forgot your password?</a>
   </div>
   </div>

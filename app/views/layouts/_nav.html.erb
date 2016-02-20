@@ -21,7 +21,7 @@
 <% end %>
 
 <% if user_signed_in? %>
-  <li><a class="nav-link" href="/notes/new">New Note <span class="sr-only">(current)</span></a></li>
+  <li><a class="nav-link" href="/notes">My Notes <span class="sr-only">(current)</span></a></li>
 <% else %>
   <li><a class="nav-link" href="#">Get Started <span class="sr-only">(current)</span></a></li>
 <% end %>
@@ -35,7 +35,7 @@
 
 <ul class="nav navbar-nav navbar-right">
  <% if user_signed_in? %>
-<li><a href="#">Nicolaos Yorgos</a></li>
+<li><a href="#">Nicoloas Yorgos</a></li>
 <li><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></li>
   <% else %>
   <li><%= link_to('Log in', new_user_session_path, :class => "sign-up-nav")%></li>

@@ -1,9 +1,19 @@
 /*
  *= require_self
  */
-@import 'bootstrap.css';
-@import 'form.sass';
-@import 'font-awesome';
-@import 'style.css';
-@import 'subjects.sass';
-@import 'global.sass';
+@import '1-tools/bootstrap.css';
+@import '1-tools/font-awesome';
+
+
+@import '2-basics/global.sass';
+
+
+@import '3-modules/form.sass';
+@import '3-modules/notes.sass';
+@import '3-modules/landing-two.sass';
+@import '3-modules/landing.css';
+
+
+@import '4-pages/devise.sass';
+@import '4-pages/subjects.sass';
+
